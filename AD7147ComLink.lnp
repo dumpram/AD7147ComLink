@@ -1,0 +1,15 @@
+--cpu Cortex-M4.fp
+".\startup_stm32f40_41xxx.o"
+".\system_stm32f4xx.o"
+".\main.o"
+".\ad7147.o"
+".\i2c_conf.o"
+".\usart.o"
+".\misc.o"
+".\stm32f4xx_gpio.o"
+".\stm32f4xx_i2c.o"
+".\stm32f4xx_rcc.o"
+".\stm32f4xx_usart.o"
+--ro-base 0x08000000 --entry 0x08000000 --rw-base 0x20000000 --entry Reset_Handler --first __Vectors --strict --summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\AD7147ComLink.map" -o .\AD7147ComLink.axf
